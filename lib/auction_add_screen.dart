@@ -2,14 +2,14 @@ import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'AuctionListPage.dart';
+import 'auction_list_screen.dart';
 
-class AuctionItemPage extends StatefulWidget {
+class AuctionAddScreen extends StatefulWidget {
   @override
-  _AuctionItemPageState createState() => _AuctionItemPageState();
+  _AuctionAddScreenState createState() => _AuctionAddScreenState();
 }
 
-class _AuctionItemPageState extends State<AuctionItemPage> {
+class _AuctionAddScreenState extends State<AuctionAddScreen> {
   final _formKey = GlobalKey<FormState>();
   final _picker = ImagePicker();
   List<File> _images = [];
